@@ -8,6 +8,7 @@ public class OnlineReg {
 	@Id
 	@GeneratedValue
 	private Integer id;
+
 	private String userName, name, password, phone;
 
 	public OnlineReg() {
