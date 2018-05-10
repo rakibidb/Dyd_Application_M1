@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Department of Youth Development- | যুব উন্নয়ন অধিদপ্তর-</title>
+
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+<link href="../assets/css/style.css" rel="stylesheet" />
+<link href="../assets/css/responsive.css" rel="stylesheet" />
+<script src="../admin/ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div id="loginbox" style="margin-top: 50px;"
+			class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<div class="panel-title">Sign In</div>
+					<div
+						style="float: right; font-size: 80%; position: relative; top: -10px">
+						<a href="#">Only for admin</a>
+					</div>
+				</div>
+				<div style="padding-top: 30px" class="panel-body">
+					<div style="display: none" id="login-alert"
+						class="alert alert-danger col-sm-12"></div>
+					<div th:if="${param.error}" class="alert alert-danger">Wrong
+						userName or password</div>
+					<div th:if="${param.logout}" class="alert alert-success">You
+						have been logged out.</div>
+					<form id="loginform" class="form-horizontal" th:action="@{/login}"
+						method="post" role="form">
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-user"></i></span> <input id="login-username"
+								type="text" class="form-control" name="username" value=""
+								placeholder="username or email" />
+						</div>
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-lock"></i></span> <input id="login-password"
+								type="password" class="form-control" name="password"
+								placeholder="password" />
+						</div>
+						<div style="margin-top: 10px" class="form-group">
+							<!-- Button -->
+							<div class="col-sm-12 controls">
+								<button id="btn-login" class="btn btn-success">Login</button>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-12 control">
+								<div
+									style="border-top: 1px solid #888; padding-top: 15px; font-size: 85%">
+									Welcome, lets enjoy your site</div>
+							</div>
+						</div>
+					</form>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/hover-menu.js"></script>
+	<script src="../assets/js/main.js"></script>
+</body>
+
+</html>

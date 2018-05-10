@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Department of Youth Development- | যুব উন্নয়ন অধিদপ্তর-</title>
+
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+<link href="assets/css/style.css" rel="stylesheet" />
+<link href="assets/css/responsive.css" rel="stylesheet" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+
+	<!--header section-->
+	<div class="header-area">
+		<div class="container">
+
+
+			<div class="row">
+				<div class="header-panel">
+					<div class="col-md-12">
+						<div id="slider">
+							<img src="assets/img/logo.png" class="logo" alt="logo" />
+							<h1 class="title">কেন্দ্রীয় মানব সম্পদ উন্নয়ন কেন্দ্র</h1>
+							<div class="slides">
+								<img src="assets/img/slide/1.jpg" /> <img
+									src="assets/img/slide/2.jpg" /> <img
+									src="assets/img/slide/3.jpg" /> <img
+									src="assets/img/slide/4.jpg" /> <img
+									src="assets/img/slide/5.jpg" />
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end of header section-->
+
+	<!--menu section-->
+	<div class="menu-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="main-menu">
+						<nav class="navbar navbar-default" role="navigation">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle"
+									data-toggle="collapse" data-target="#menu1">
+									<span class="sr-only">Toggle navigation</span> <span
+										class="icon-bar"></span> <span class="icon-bar"></span> <span
+										class="icon-bar"></span>
+								</button>
+							</div>
+
+
+							<div class="collapse navbar-collapse" id="menu1">
+								<ul class="nav navbar-nav">
+
+									<li class="dropdown"><a href="/">প্রথম পাতা</a></li>
+
+									<li class="dropdown"><a href="/mission"
+										class="dropdown-toggle" data-toggle="dropdown"
+										style="color: #090">আমাদের সম্পর্কে</a>
+										<ul class="dropdown-menu">
+											<li><a href="/history">ইতিহাস</a></li>
+											<li><a href="/mission">মিশন ও ভিশন</a></li>
+											<li><a href="/academy">একনজরে একাডেমী</a></li>
+
+										</ul></li>
+
+
+									<li class="dropdown"><a href="/principal"
+										style="color: #F0F">অধ্যক্ষ</a></li>
+
+
+
+									<li class="dropdown"><a href="#" class="dropdown-toggle"
+										data-toggle="dropdown" style="color: #F00">প্রশিক্ষণ</a>
+										<ul class="dropdown-menu">
+											<li><a href="/trainingac">প্রশিক্ষণ বর্ষপঞ্জি</a></li>
+											<li><a href="/trainingCourse">প্রশিক্ষণ কোর্স</a></li>
+											<li><a href="/trainingMathod">প্রশিক্ষণ পদ্ধতি</a></li>
+											<li><a href="/ongoing">চলমান কোর্স</a></li>
+											<li><a href="/complete_program">সমাপ্ত কোর্স</a></li>
+										</ul></li>
+
+
+
+									<li class="dropdown"><a href="/employees"
+										class="dropdown-toggle" style="color: #00F">কর্মকর্তাবৃন্দ</a>
+									</li>
+									<li class="dropdown"><a href="#" class="dropdown-toggle"
+										data-toggle="dropdown" style="color: #C00">প্রকল্প</a>
+										<ul class="dropdown-menu">
+											<li><a href="/project">প্রকল্প সমূহ</a></li>
+										</ul></li>
+
+
+									<li class="dropdown"><a href="#" class="dropdown-toggle"
+										data-toggle="dropdown" style="color: #00F">তথ্য অধিকার</a>
+										<ul class="dropdown-menu">
+											<li><a href="/rightInformationtoact">তথ্য অধিকার আইন</a></li>
+											<li><a href="/ict_comision">তথ্য কমিশন</a></li>
+										</ul></li>
+
+
+									<li class="dropdown"><a href="/organizational_structure"
+										class="dropdown-toggle" style="color: #090">সাংগঠনিক
+											কাঠামো</a></li>
+
+
+
+									<li class="dropdown"><a href="/opinions"
+										class="dropdown-toggle" style="color: #F0F">মতামত</a></li>
+								</ul>
+							</div>
+
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end of menu section-->
+
+	<div class="content">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-9">
+					<div th:text="${training_Callender.editor}"></div>
+					<!-- <div ng-app="">
+						
+						<h1>Hello {{training_Callender.editor}}</h1>
+					</div> -->
+					<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/t2ByLmLnYJ8" frameborder="0"
+						allow="autoplay; encrypted-media" allowfullscreen="true"></iframe>
+					<!--  rows="170" cols="100" -->
+					<!--dynamic Start  -->
+
+					<!--start  -->
+					<!-- <h4 align="justify">২০১৭-২০১৮ অর্থ বছরের প্রশিক্ষণ পরিকল্পনা</h4>
+
+
+					principal board
+					<div class="all-principal-board-wrap">
+
+
+
+						<p align="justify" class="p-principal">
+							<strong> (ক) দক্ষতা উন্নয়নমূলক বিভিন্ন প্রশিক্ষণঃ </strong>
+						<table style="width: 715px">
+							<tr bgcolor="#609513">
+								<td width="10"><strong> ক্র নং</strong></td>
+								<td width="32"><strong>প্রশিক্ষণের নাম</strong></td>
+								<td width="8"><strong>মেয়াদ</strong></td>
+								<td width="8"><strong>অংশগ্রহণকারী</strong></td>
+								<td width="8"><strong>মোট ব্যাচ</strong></td>
+								<td width="8"><strong>প্রতি ব্যাচে প্রশিক্ষনার্থীর
+										সংখ্যা</strong></td>
+								<td width="8"><strong>মোট প্রশিক্ষনার্থীর সংখ্যা
+										(৫X৬)</strong></td>
+								<td width="8"><strong>প্রতি ব্যাচের সম্ভাব্য বাজেট</strong></td>
+								<td width="10"><strong>মোট বাজেট (৫X৮)</strong></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>আচরণ ও শৃঙ্খলা বিষয়ক প্রশিক্ষণ কোর্স</td>
+								<td>৫ দিন</td>
+								<td>উপজেলা যুব উন্নয়ন কর্মকর্তা ও ক্রেডিট সুপারভাইজার</td>
+								<td>০৪ ব্যাচ</td>
+								<td>৪০ জন</td>
+								<td>১৬০ জন</td>
+								<td>২,২২,৪৯৮.০০</td>
+								<td>৮,৮৯,৯৯২.০০</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>ইন্টারনেট ও ট্রাবলস্যুটিং বিষয়ক প্রশিক্ষণ কোর্স</td>
+								<td>৫ দিন</td>
+								<td>ডিডি.পিসি, ডিপিসি, এডি, সিডিও, যুউক, উচ্চমান সহকারী,
+									অফিস সহঃ কাম-কম্পিউটার অপারেটর</td>
+								<td>০৪ ব্যাচ</td>
+								<td>৩০ জন</td>
+								<td>১২০ জন</td>
+								<td>১,৭৩,৬৭৮.০০</td>
+								<td>৬,৯৪,৭১২.০০</td>
+							</tr>
+							<tr>
+								<td><div align="center">3</div></td>
+								<td><div align="center">কম্পিউটার হার্ডওয়্যার এন্ড
+										ট্রাবল স্যুটিং বিষয়ক প্রশিক্ষণ কোর্স</div></td>
+								<td><div align="center">৫ দিন</div></td>
+								<td><div align="center">সহকারী প্রশিঃ(কম্পিউটার),
+										উচ্চমান সহকারী ও অফিস সহঃ কাম-কম্পিউটার অপারেটর।</div></td>
+								<td><div align="center">০৫ ব্যাচ</div></td>
+								<td><div align="center">৩০ জন</div></td>
+								<td><div align="center">১৫০ জন</div></td>
+								<td><div align="center">১,৮৩,৬৭৮.০০</div></td>
+								<td><div align="center">৯,১৮,৩৯০.০০</div></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>ই-ফাইলিং বিষয়ক প্রশিক্ষণ কোর্স</td>
+								<td>৩ দিন</td>
+								<td>ডিডি, এডি, উচ্চমান সহকারী/অফিস সহঃ</td>
+								<td>০৪ ব্যাচ</td>
+								<td>৩০ জন</td>
+								<td>১২০ জন</td>
+								<td>১,২০,৯৭৮.০০</td>
+								<td>৪,৮৩,৯১২.০০</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>ই-ফাইলিং বিষয়ক রিফ্রেসার প্রশিক্ষণ কোর্স</td>
+								<td>২ দিন</td>
+								<td>ডিডি, এডি, উচ্চমান সহকারী/অফিস সহঃ</td>
+								<td>০২ ব্যাচ</td>
+								<td>৩০ জন</td>
+								<td>৬০ জন</td>
+								<td>৮৯,৪২৮.০০</td>
+								<td>১,৭৮,৮৫৬.০০</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>বেসিক কম্পিউটার বিষয়ক প্রশিক্ষণ কোর্স</td>
+								<td>১৫ দিন</td>
+								<td>উপজেলা যুব উন্নয়ন কর্মকর্তা, ক্রেডিট সুপারভাইজার ও
+									অফিস সহঃ কাম-কম্পিউটার অপারেটর</td>
+								<td>০২ ব্যাচ</td>
+								<td>৩০ জন</td>
+								<td>৬০ জন</td>
+								<td>৩, ৮৭,৫২৮.০০</td>
+								<td>৭,৭৫,০৫৬.০০</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>কমিউনিকেটিং ইংলিশ কোর্স (ইংলিশ ল্যাগুয়েজ কোর্স)</td>
+								<td>২১ দিন</td>
+								<td>ডিডি.পিসি,ডিপিসি,এডি, সিডিও এবং উপজেলা যুউক।</td>
+								<td>০২ ব্যাচ</td>
+								<td>৩০ জন</td>
+								<td>৬০ জন</td>
+								<td>৫,০৮,৭৩৮.০০</td>
+								<td>১০,১৭,৪৭৬.০০</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>আধুনিক অফিস ব্যবস্থাপনা ও প্রশাসনিক কার্যক্রম পরিচালনা
+									বিষয়ক প্রশিক্ষণ কোর্স</td>
+								<td>৫ দিন</td>
+								<td>উপজেলা যুব উন্নয়ন কর্মকর্তা ও উচ্চমান সহকারী. অফিস সহঃ
+									কামঃ কম্পিঃ অপারেটর/ক্যাশিয়ার।</td>
+								<td>০২ ব্যাচ</td>
+								<td>৪০ জন</td>
+								<td>৮০ জন</td>
+								<td>২,২২,৪৯৮.০০</td>
+								<td>৪,৪৪,৯৯৬.০০</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>বিষয়ভিত্তিক প্রশিক্ষক প্রশিক্ষণ (TOT) কোর্স</td>
+								<td>৭ দিন</td>
+								<td>পিসি,ডিপিসি, সিনিয়র প্রশিক্ষক ও প্রশিক্ষক (বিভিন্ন
+									ট্রেডের)</td>
+								<td>০৬ ব্যাচ</td>
+								<td>৩০ জন</td>
+								<td>১৮০ জন</td>
+								<td>২,৫০,৪৩৮.০০</td>
+								<td>১৫,০২,৬২৮.০০</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>প্রশিক্ষণ ব্যবস্থাপনা বিষয়ক প্রশিক্ষণ কোর্স</td>
+								<td>৫ দিন</td>
+								<td>ডিডি.পিসি,ডিপিসি,এডি, সিডিও, সিঃ ইন্সট্রাক্টর এবং
+									উপজেলা যুউক</td>
+								<td>০২ ব্যাচ</td>
+								<td>৪০ জন</td>
+								<td>৮০ জন</td>
+								<td>২,২২,৪৯৮.০০</td>
+								<td>৪,৪৪,৯৯৬.০০</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>বিষয়ভিত্তিক রিফ্রেসার প্রশিক্ষণ কোর্স</td>
+								<td>০৩ দিন</td>
+								<td>ডিডি.পিসি,ডিপিসি,এডি, সিডিও, সিঃ ইন্সট্রাক্টর, উপজেলা
+									যুউক ও সিএস</td>
+								<td>০২ ব্যাচ</td>
+								<td>৪০ জন</td>
+								<td>৮০ জন</td>
+								<td>১,৪২,৫৪৮.০০</td>
+								<td>২,৮৫,০৯৬.০০</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>বিশেষ প্রশিক্ষণ কোর্স (কক্সবাজার)</td>
+								<td>০৭ দিন</td>
+								<td>প্রথম শ্রেণীর কর্মকর্তা</td>
+								<td>০১ ব্যাচ</td>
+								<td>৩০ জন</td>
+								<td>৩০ জন</td>
+								<td>৫,৩৩,০৫৩.০০</td>
+								<td>৫,৩৩,০৫৩.০০</td>
+							</tr>
+
+
+							<tr>
+								<td>13</td>
+								<td>বিশেষ প্রশিক্ষণ কোর্স (সিলেট)</td>
+								<td>০৭ দিন</td>
+								<td>দ্বিতীয় শ্রেণীর কর্মকর্তা</td>
+								<td>০১ ব্যাচ</td>
+								<td>৩০ জন</td>
+								<td>৩০ জন</td>
+								<td>৩,০৫,১০৯.০০</td>
+								<td>৩,০৫,১০৯.০০</td>
+							</tr>
+
+
+							<tr>
+								<td colspan="4">দক্ষতা উন্নয়নমূলক প্রশিক্ষন বাবদ উপ-মোট =</td>
+								<td>৩৭ ব্যাচ</td>
+								<td></td>
+								<td>১২১০ জন</td>
+								<td></td>
+								<td>=৮৪,৭৪,২৭২.০০</td>
+							</tr>
+
+						</table>
+
+
+						</p>
+
+
+						<p align="justify" class="p-principal">
+							<strong> (কথায়ঃ চুরাশি লক্ষ চুয়াত্তর হাজার দুইশত
+								বাহাত্তর টাকা মাত্র)</strong>।
+						</p>
+
+						<p align="justify" class="p-principal">
+							<strong> (খ) কর্মশালা/ওয়ার্কসপ/সেমিনারঃ</strong>
+						</p>
+
+
+
+						<table style="width: 715px">
+							<tr>
+								<td>1</td>
+								<td>কোর্স কারিকুল্যাম রিভিউ ওয়ার্কশপ</td>
+								<td>১ দিন</td>
+								<td>ডিডি.পিসি,ডিপিসি,এডি, সিডিও, সিঃ ইন্সট্রাক্টর, উপজেলা
+									যুউক,ইন্সট্রাক্টর</td>
+								<td>০১ ব্যাচ</td>
+								<td>৫০ জন</td>
+								<td>৫০ জন</td>
+								<td>১,৮৯,৯৮৪.০০</td>
+								<td>১,৮৯,৯৮৪.০০</td>
+							</tr>
+
+						</table>
+
+
+
+
+					</div> -->
+
+					<!--End  -->
+					<!--dynamic End  -->
+				</div>
+
+
+
+
+				<div class="col-md-3">
+					<div class="service-box-wrap">
+						<div class="service-box">
+							<h5 class="service-title">মহাপরিচালক</h5>
+							<img src="assets/img/principal.jpg" alt="dg_img" /><br /> <br />
+							<h4>এইচ এম জিল্লুর রহমান</h4>
+							<h5>
+								অধ্যক্ষ<br /> <span>কেন্দ্রীয় মানব সম্পদ উন্নয়ন
+									কেন্দ্র</span>
+							</h5>
+
+							<a href="/principal" class="details-btn">বিস্তারিত</a>
+						</div>
+						<div class="service-box">
+							<div class="eservice">
+								<h5 class="service-title">ম্যাপ</h5>
+
+								<table width="217" height="200" border="1">
+									<tr>
+										<td width="117">&nbsp;</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="service-box">
+							<div class="central-eservice">
+								<h5 class="service-title">কেন্দ্রীয় ই-সেবা</h5>
+								<ul class="services">
+									<li><a href="http://www.dyd.gov.bd/" target="_blank"><i
+											class="fa fa-check"></i>যুব উন্নয়ন অধিদপ্তর</a></li>
+
+									<li><a href="http://online.forms.gov.bd/" target="_blank"><i
+											class="fa fa-check"></i>অনলাইনে সেবার আবেদন</a></li>
+									<li><a href="http://www.nothi.gov.bd/users/login"
+										target="_blank"><i class="fa fa-check"></i>নথি</a></li>
+									<li><a
+										href="http://bris.lgd.gov.bd/pub/?pg=application_form"
+										target="_blank"><i class="fa fa-check"></i>জন্ম ও মৃত্যু
+											নিবন্ধন</a></li>
+									<li><a href="http://xn--d5by7bap7cc3ici3m.xn--54b7fta0cc/"
+										target="_blank"><i class="fa fa-check"></i>উত্তরাধিকার
+											ক্যালকুলেটর</a></li>
+
+									<li><a href="http://pcc.police.gov.bd/en/f?p=500:1:0"
+										target="_blank"><i class="fa fa-check"></i>অনলাইন পুলিশ
+											ক্লিয়ারেন্স</a></li>
+									<li><a
+										href="http://www.dip.gov.bd/site/page/f2d015a9-1132-4426-8eef-147f1c4bac8a"
+										target="_blank"><i class="fa fa-check"></i>অনলাইনে
+											পাসপোর্টের আবেদন</a></li>
+									<li><a href="" target="_blank"><i class="fa fa-check"></i>জাতীয়
+											পরিচয়পত্রের তথ্য হালনাগাদকরণ</a></li>
+									<li><a href="http://www.nbrepayment.gov.bd/"
+										target="_blank"><i class="fa fa-check"></i>অনলাইন আয়কর
+											পরিশোধ</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="service-box">
+							<div class="important-link">
+								<h5 class="service-title">গুরুত্বপূর্ণ লিংক</h5>
+								<ul class="services">
+									<li><a href="http://bcsaa.elearning.gov.bd/login/auth"
+										target="_blank"><i class="fa fa-check"></i>ই-লার্নিং সাইট</a></li>
+
+									<li><a href="http://www2.mopa.gov.bd/bcsaa/"
+										target="_blank"><i class="fa fa-check"></i>অনলাইন
+											রেজিস্ট্রেশন</a></li>
+
+								</ul>
+								<a href="" class="details-btn">সকল লিংকসমূহ</a>
+							</div>
+						</div>
+
+
+
+
+						<div class="service-box">
+							<div class="social-media">
+								<h5 class="service-title">সামাজিক যোগাযোগ</h5>
+								<a href=""><i class="fa fa-facebook"></i></a> <a href=""><i
+									class="fa fa-facebook"></i></a> <a href=""><i
+									class="fa fa-facebook"></i></a> <a href=""><i
+									class="fa fa-facebook"></i></a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="footer-wrap">
+
+					<div class="col-md-6">
+						<div class="left-footer-section">
+							<ul class="footer-menu">
+								<p>জেগেছে যুব, জেগেছে দেশ , লক্ষ্য ২০৪১-এ উন্নত বাংলাদেশ</p>
+							</ul>
+							<p>সাইটটি শেষ হাল-নাগাদ করা হয়েছে: 04/01/2018</p>
+						</div>
+					</div>
+
+
+
+					<div class="col-md-6">
+						<div class="right-footer-section">
+							<p>
+								পরিকল্পনা ও বাস্তবায়নে: <a href=""> মন্ত্রিপরিষদ বিভাগ</a>, <a
+									href="">এটুআই</a>, <a href="">বিসিসি</a> ও <a href="">বেসিস</a>
+							</p>
+
+							<p>
+								কারিগরি সহায়তায়: <a href="">লেমুনুজ্জামান</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/hover-menu.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
