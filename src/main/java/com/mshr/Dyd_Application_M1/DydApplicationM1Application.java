@@ -10,4 +10,5 @@ public class DydApplicationM1Application {
 		SpringApplication.run(DydApplicationM1Application.class, args);
 	}
 
+	
 }

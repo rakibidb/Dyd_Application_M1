@@ -5,9 +5,9 @@ import javax.persistence.*;
 @Entity
 public class OnlineReg {
 
-	@Id @GeneratedValue
+	@Id
+	@GeneratedValue
 	private Integer id;
-	
 	private String userName, name, password, phone;
 
 	public OnlineReg() {
